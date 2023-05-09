@@ -1,3 +1,13 @@
+:root {
+  --pink: #f67acb;
+  --purple: #5b1fa6;
+  --gray-scale-01: #050110;
+  --gray-scale-02: #0f0c1b;
+  --gray-scale-03: #3f3d49;
+  --gray-scale-04: #57555f;
+  --gray-scale-05: #9995a6;
+}
+
 @font-face {
   font-family: "Atyp BL Text";
   src: url("../fonts/AtypBLText-Regular.woff2") format("woff2"), url("../fonts/AtypBLText-Regular.woff") format("woff");
@@ -63,4 +73,58 @@ a {
   max-width: 124.6rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--purple);
+}
+
+ul li {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--gray-scale-01);
+}
+
+p,
+li {
+  font-weight: 400;
+  color: var(--gray-scale-03);
 }
