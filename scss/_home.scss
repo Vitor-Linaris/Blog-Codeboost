@@ -41,3 +41,34 @@
     }
   }
 }
+
+.s-artigos {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background: linear-gradient(180deg, #0f0c1b 85.69%, rgba(15, 12, 27, 0) 100%);
+  border-bottom: 2px solid #1c162e;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    p {
+      display: flex;
+      align-items: center;
+      color: var(--gray-scale-06);
+      img {
+        margin-left: 1.6rem;
+      }
+    }
+  }
+  .all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 32px;
+    margin-bottom: 8rem;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}

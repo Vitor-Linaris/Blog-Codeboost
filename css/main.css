@@ -6,6 +6,7 @@
   --gray-scale-03: #3f3d49;
   --gray-scale-04: #57555f;
   --gray-scale-05: #9995a6;
+  --gray-scale-06: #acb4bf;
 }
 
 @font-face {
@@ -628,6 +629,7 @@ header {
   background-color: rgba(15, 12, 27, 0.5);
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
+  z-index: 2023;
 }
 header .container {
   display: -webkit-box;
@@ -719,4 +721,46 @@ header nav ul li:not(:first-child) {
   height: 0.2rem;
   bottom: 0;
   left: 0;
+}
+
+.s-artigos {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(85.69%, #0f0c1b), to(rgba(15, 12, 27, 0)));
+  background: linear-gradient(180deg, #0f0c1b 85.69%, rgba(15, 12, 27, 0) 100%);
+  border-bottom: 2px solid #1c162e;
+}
+.s-artigos .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.s-artigos .top p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--gray-scale-06);
+}
+.s-artigos .top p img {
+  margin-left: 1.6rem;
+}
+.s-artigos .all {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px 32px;
+  margin-bottom: 8rem;
+}
+.s-artigos button {
+  display: block;
+  margin: 0 auto;
 }
