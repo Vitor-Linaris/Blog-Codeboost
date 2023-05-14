@@ -124,13 +124,6 @@ h5,
 h6 {
   font-weight: 600;
   color: var(--gray-scale-01);
-}
-h1.txt-white,
-h2.txt-white,
-h3.txt-white,
-h4.txt-white,
-h5.txt-white,
-h6.txt-white {
   color: white;
 }
 
@@ -672,4 +665,58 @@ header nav ul {
 }
 header nav ul li:not(:first-child) {
   margin-left: 6.4rem;
+}
+
+.s-hero-post {
+  padding-top: 8.3rem;
+  padding-bottom: 11.7rem;
+}
+.s-hero-post .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.s-hero-post .left-container {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 72.8rem;
+}
+.s-hero-post .left-container .title {
+  margin-bottom: 4.2rem;
+}
+.s-hero-post .left-container .title h2 {
+  margin-top: 1.4rem;
+}
+.s-hero-post .right-container {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 38.4rem;
+  margin-top: 4rem;
+}
+.s-hero-post .right-container .all {
+  margin-top: 4.2rem;
+}
+.s-hero-post .right-container .all .item-post {
+  position: relative;
+}
+.s-hero-post .right-container .all .item-post:not(:last-child) {
+  padding-bottom: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.s-hero-post .right-container .all .item-post:not(:last-child):after {
+  content: "";
+  background: url("../img/line-divisor.svg") no-repeat center center;
+  width: 100%;
+  position: absolute;
+  height: 0.2rem;
+  bottom: 0;
+  left: 0;
 }
