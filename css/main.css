@@ -764,3 +764,74 @@ header nav ul li:not(:first-child) {
   display: block;
   margin: 0 auto;
 }
+
+.s-podcast {
+  padding-top: 12rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 2px solid #1c162e;
+}
+.s-podcast .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.s-podcast .top .ctrl-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 18.4rem;
+}
+.s-podcast .top .ctrl-slide .swiper-pagination {
+  position: relative;
+  bottom: 0;
+  width: auto;
+}
+.s-podcast .top .ctrl-slide .swiper-pagination .swiper-pagination-bullet {
+  width: 2.4rem;
+  height: 0.3rem;
+  background-color: #f67acb;
+  border-radius: 0;
+  opacity: 0.25;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.s-podcast .top .ctrl-slide .swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.s-podcast .top .ctrl-slide .crtl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.s-podcast .top .ctrl-slide .crtl .btn.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.s-podcast .top .ctrl-slide .crtl .btn-prev {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-right: 1.7rem;
+}
+.s-podcast .slide-podcast {
+  position: relative;
+  overflow: hidden;
+}
