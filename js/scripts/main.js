@@ -11,3 +11,12 @@ var slide_podcast = new Swiper(".slide-podcast", {
   },
   speed: 600,
 });
+
+const bntScrollTop = document.getElementById("js-btn-scroll-top");
+
+bntScrollTop.addEventListener("click", function () {
+  scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
