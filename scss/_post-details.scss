@@ -136,5 +136,90 @@
         }
       }
     }
+    .info-post-geral {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 8rem;
+      .left-content {
+        flex: 1;
+        max-width: 28.6rem;
+        h6 {
+          line-height: 120%;
+          color: var(--gray-scale-01);
+          margin-bottom: 4rem;
+        }
+        ul {
+          position: relative;
+          padding-bottom: 4rem;
+          margin-bottom: 4rem;
+          &:after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: url("../img/line-topics.svg") no-repeat center center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+          li {
+            &:not(:last-child) {
+              margin-bottom: 1.6rem;
+            }
+            a {
+              display: flex;
+              align-items: flex-start;
+              &.active,
+              &:hover {
+                &:before {
+                  background-color: var(--pink);
+                }
+                span {
+                  color: var(--gray-scale-01);
+                }
+              }
+              &:before {
+                content: "";
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                background-color: var(--gray-scale-05);
+                margin-top: 1rem;
+                margin-right: 1.6rem;
+              }
+              span {
+                flex: 1;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: var(--gray-scale-04);
+              }
+            }
+          }
+        }
+        button {
+          display: flex;
+          align-items: center;
+          &:hover {
+            span {
+              color: var(--pink);
+            }
+          }
+          span {
+            font-family: "Atyp BL Text", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            color: var(--gray-scale-01);
+            margin-left: 1.6rem;
+            transition: color 0.3s ease;
+          }
+        }
+      }
+      .right-content {
+        flex: 1;
+        max-width: 80rem;
+        margin-left: 7.6rem;
+      }
+    }
   }
 }
