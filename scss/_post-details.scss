@@ -141,6 +141,9 @@
       align-items: flex-start;
       margin-top: 8rem;
       .left-content {
+        position: sticky;
+        top: 10rem;
+        left: 0;
         flex: 1;
         max-width: 28.6rem;
         h6 {
@@ -219,7 +222,109 @@
         flex: 1;
         max-width: 80rem;
         margin-left: 7.6rem;
+        .content-post {
+          width: 100%;
+          border-bottom: 2px solid rgba(28, 22, 46, 0.1);
+          padding-bottom: 4rem;
+          margin-bottom: 4rem;
+          blockquote {
+            border-left: 2px solid rgba(92, 31, 166, 0.15);
+            padding-left: 2.4rem;
+            margin-bottom: 4rem;
+            p {
+              font-weight: 400;
+              font-size: 1.8rem;
+              line-height: 175%;
+              color: var(--gray-scale-03);
+              margin-bottom: 0;
+            }
+          }
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            color: var(--gray-scale-01);
+            margin-bottom: 2.4rem;
+          }
+          p {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 175%;
+            color: var(--gray-scale-03);
+            margin-bottom: 1.6rem;
+            a {
+              text-decoration: underline;
+              transition: filter 0.3s ease;
+              &:hover {
+                filter: brightness(0.5);
+              }
+            }
+          }
+          ul {
+            padding-left: 1.5rem;
+            margin-bottom: 4rem;
+            li {
+              list-style-type: disc;
+              font-weight: 400;
+              font-size: 1.8rem;
+              line-height: 175%;
+              color: var(--gray-scale-03);
+              margin-bottom: 1.6rem;
+              &:not(:last-child) {
+                margin-bottom: 1.6rem;
+              }
+            }
+          }
+        }
+        .share {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          strong {
+            font-weight: 600;
+            font-size: 1 6rem;
+            line-height: 100%;
+            color: var(--gray-scale-01);
+          }
+          ul {
+            display: flex;
+            align-items: center;
+            li {
+              &:not(:first-child) {
+                margin-left: 3.3rem;
+              }
+            }
+          }
+        }
       }
     }
+  }
+}
+
+.s-post-semelhantes {
+  padding: 12rem 0;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    p {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 150%;
+      color: var(--gray-scale-06);
+      img {
+        margin-left: 1.6rem;
+      }
+    }
+  }
+  .all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0rem 3.2rem;
   }
 }
