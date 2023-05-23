@@ -983,7 +983,6 @@ footer .right-footer button:hover {
 }
 
 .s-artigos {
-  display: none;
   padding-top: 12rem;
   padding-bottom: 12rem;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(85.69%, #0f0c1b), to(rgba(15, 12, 27, 0)));
@@ -1023,6 +1022,40 @@ footer .right-footer button:hover {
 .s-artigos button {
   display: block;
   margin: 0 auto;
+}
+@media (max-width: 1150px) {
+  .s-artigos .all {
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .s-artigos .all {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .s-artigos .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .s-artigos .top h2 {
+    margin-bottom: 2rem;
+  }
+  .s-artigos .all {
+    grid-template-columns: 1fr;
+    grid-gap: 3.2rem;
+  }
+  .s-artigos button {
+    width: 100%;
+    padding: 2.5rem 0;
+    font-size: 1.8rem;
+  }
 }
 
 .s-podcast {
