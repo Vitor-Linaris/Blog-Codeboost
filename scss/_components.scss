@@ -126,6 +126,20 @@
       transition: color 0.3s ease;
     }
   }
+  @media (max-width: 560px) {
+    .image {
+      height: 20rem;
+      margin-bottom: 2rem;
+    }
+    .info {
+      .top-info {
+        justify-content: center;
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .card-post-xs {
@@ -193,6 +207,18 @@
           color: var(--gray-scale-05);
         }
       }
+    }
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    justify-content: center;
+    .info {
+      flex: initial;
+    }
+  }
+  @media (max-width: 560px) {
+    .info {
+      flex: 1;
     }
   }
 }
