@@ -10,6 +10,28 @@ var slide_podcast = new Swiper(".slide-podcast", {
     prevEl: ".s-podcast .top .btn-prev",
   },
   speed: 600,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 1.5,
+    },
+    768: {
+      slidesPerView: 2.1,
+    },
+    991: {
+      slidesPerView: 2.5,
+    },
+    1100: {
+      slidesPerView: 3.5,
+      spaceBetween: 32,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
 });
 
 const bntScrollTop = document.getElementById("js-btn-scroll-top");

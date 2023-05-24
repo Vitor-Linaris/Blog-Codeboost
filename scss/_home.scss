@@ -173,7 +173,6 @@
 }
 
 .s-podcast {
-  display: none;
   padding-top: 12rem;
   padding-bottom: 1.2rem;
   border-bottom: 2px solid #1c162e;
@@ -223,6 +222,28 @@
   .slide-podcast {
     position: relative;
     overflow: hidden;
+  }
+  @media (max-width: 1150px) {
+    .container {
+      padding: 0;
+    }
+    .top {
+      padding: 0 1.5rem;
+      .ctrl-slide {
+        justify-content: flex-end;
+        .swiper-pagination {
+          display: none;
+        }
+      }
+    }
+    .slide-podcast {
+      padding: 0 1.5rem;
+    }
+  }
+  @media (max-width: 560px) {
+    .top {
+      margin-bottom: 2rem;
+    }
   }
 }
 
