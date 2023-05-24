@@ -1433,6 +1433,7 @@ footer .right-footer button:hover {
   margin-right: 1.4rem;
 }
 .s-detalhes-post .featured-info-post {
+  display: none;
   position: relative;
   z-index: 1;
   margin-top: 4.8rem;
@@ -1691,8 +1692,34 @@ footer .right-footer button:hover {
 .s-detalhes-post .featured-info-post .info-post-geral .right-content .share ul li:not(:first-child) {
   margin-left: 3.3rem;
 }
+@media (max-width: 560px) {
+  .s-detalhes-post .top-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .s-detalhes-post .top-details .breadcrumbs {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+  .s-detalhes-post .top-details .breadcrumbs li:last-child {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .s-detalhes-post .top-details .breadcrumbs li:last-child span {
+    font-size: 1.8rem;
+    line-height: 160%;
+  }
+}
 
 .s-post-semelhantes {
+  display: none;
   padding: 12rem 0;
 }
 .s-post-semelhantes .top {
