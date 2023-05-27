@@ -1820,7 +1820,6 @@ footer .right-footer button:hover {
 }
 
 .s-post-semelhantes {
-  display: none;
   padding: 12rem 0;
 }
 .s-post-semelhantes .top {
@@ -1853,5 +1852,24 @@ footer .right-footer button:hover {
 .s-post-semelhantes .all {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0rem 3.2rem;
+  grid-gap: 3.2rem;
+}
+@media (max-width: 768px) {
+  .s-post-semelhantes .all {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .s-post-semelhantes .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .s-post-semelhantes .top h2 {
+    margin-bottom: 2rem;
+  }
+  .s-post-semelhantes .all {
+    grid-template-columns: 1fr;
+  }
 }

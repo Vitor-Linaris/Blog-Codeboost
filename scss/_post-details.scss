@@ -427,7 +427,6 @@
 }
 
 .s-post-semelhantes {
-  display: none;
   padding: 12rem 0;
   .top {
     display: flex;
@@ -449,6 +448,22 @@
   .all {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0rem 3.2rem;
+    grid-gap: 3.2rem;
+  }
+  @media (max-width: 768px) {
+    .all {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 560px) {
+    .top {
+      flex-direction: column;
+      h2 {
+        margin-bottom: 2rem;
+      }
+    }
+    .all {
+      grid-template-columns: 1fr;
+    }
   }
 }
