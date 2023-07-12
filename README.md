@@ -12,10 +12,10 @@ O Blog Codeboost é um projeto web criado para estudar as funcionalidades do wor
 
 - Slide com fade in (Swiper.js)
 - Axios para fazer a leitura da API e integração
-- Modal para detalhes do pokemon
+- Modal para detalhes do posts
 - Multiplataforma
 - Barra de pesquisa
-- Categoria dos pokemons
+- Categoria dos posts
 
 ## Stack utilizada
 
